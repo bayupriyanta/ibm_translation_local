@@ -1,5 +1,5 @@
-from translator import english_to_french
-from translator import french_to_english
+from transcription import english_to_french
+from transcription import french_to_english
 
 
 translate1 = english_to_french('')
