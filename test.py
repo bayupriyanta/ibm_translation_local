@@ -1,8 +1,8 @@
-from translator import englishToFrench
-from translator import frenchToEnglish
+from translator import english_to_french
+from translator import french_to_english
 
-translate1 = englishToFrench('Hello')
+translate1 = english_to_french('Hello')
 print("Hello in french is "+translate1)
 
-translate2 = frenchToEnglish('Bonjour')
+translate2 = french_to_english('Bonjour')
 print("Bounjour means "+translate2)
