@@ -13,11 +13,11 @@ language_translator = LanguageTranslatorV3(version='2022-10-21',authenticator=au
 language_translator.set_service_url(url)
 
 def englishToFrench(englishText):
-        frenchTranslate = language_translator.translate(text=text1),model_id='en-fr').get_result()
-        frenchText = frenchTranslate.get("translations")[0].get("translation")
-        return frenchText
+    frenchTranslate = language_translator.translate(text=englishText,model_id='en-fr').get_result()
+    frenchText = frenchTranslate.get("translations")[0].get("translation")
+    return frenchText
 
 def frenchToEnglish(frenchText):
-    englishTranslate = language_translator.translate(text=text1),model_id='fr-en').get_result()
+    englishTranslate = language_translator.translate(text=frenchText,model_id='fr-en').get_result()
     englishText = englishTranslate.get("translations")[0].get("translation")
     return englishText
